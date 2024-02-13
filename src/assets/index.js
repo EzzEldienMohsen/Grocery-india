@@ -71,3 +71,12 @@ export const pagesLinks = [
   { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
   { id: nanoid(), text: 'Mojo - a Zepto Blog', to: '/mojo' },
 ];
+
+export const menuLinks = [
+  { id: nanoid(), text: 'Home', to: '/' },
+  { id: nanoid(), text: 'Delivery Areas', to: '/delivery-areas' },
+  { id: nanoid(), text: 'Careers', to: '/careers' },
+  { id: nanoid(), text: 'Customer Support', to: '/customer-support' },
+  { id: nanoid(), text: 'Press', to: '/press' },
+  { id: nanoid(), text: 'Mojo - a Zepto Blog', to: '/mojo' },
+];

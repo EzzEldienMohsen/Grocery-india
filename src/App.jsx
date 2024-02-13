@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home, Landing } from './Pages';
+import { Home, Landing, SecondHome, SecondLanding } from './Pages';
 
 const router = createBrowserRouter([
   {
@@ -9,6 +9,16 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+      },
+    ],
+  },
+  {
+    path: '/support',
+    element: <SecondHome />,
+    children: [
+      {
+        index: true,
+        element: <SecondLanding />,
       },
     ],
   },

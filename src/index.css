@@ -10,3 +10,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+#second-home {
+  background-color: #3c006b;
+}
+#second-outlet,
+#drop {
+  background-color: #290248;
+}
+#bars {
+  color: #ff3269;
+}
