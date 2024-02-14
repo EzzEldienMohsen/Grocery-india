@@ -3,6 +3,7 @@ import {
   DeliveryAreas,
   Home,
   Landing,
+  PrivacyPolicy,
   SecondHome,
   SecondLanding,
 } from './Pages';
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/customer-support/del-areas',
         element: <DeliveryAreas />,
+      },
+      {
+        path: '/customer-support/privacy-policy',
+        element: <PrivacyPolicy />,
       },
     ],
   },

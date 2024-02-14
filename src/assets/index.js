@@ -73,13 +73,21 @@ export const pagesLinks = [
   { id: nanoid(), text: 'Careers', to: '/careers' },
   { id: nanoid(), text: 'Customer Support', to: '/customer-support' },
   { id: nanoid(), text: 'Press', to: '/customer-support/press' },
-  { id: nanoid(), text: 'Privacy Policy', to: '/privacy-policy' },
+  {
+    id: nanoid(),
+    text: 'Privacy Policy',
+    to: '/customer-support/privacy-policy',
+  },
   { id: nanoid(), text: 'Terms of Use', to: '/terms-use' },
   { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
   { id: nanoid(), text: 'Mojo - a Zepto Blog', to: '/mojo' },
 ];
 export const footerLinks = [
-  { id: nanoid(), text: 'Privacy Policy', to: '/privacy-policy' },
+  {
+    id: nanoid(),
+    text: 'Privacy Policy',
+    to: '/customer-support/privacy-policy',
+  },
   { id: nanoid(), text: 'Terms of Use', to: '/terms-use' },
   { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
 ];
