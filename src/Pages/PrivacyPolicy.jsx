@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
           any other storage system owned by any of Us or by third parties.
         </p>
         <p className="mb-4 text-white text-2xl pl-8 font-normal">
-          c) <span className="font-semibold">Location based information:</span>
+          d) <span className="font-semibold">Location based information:</span>
           When and if You download and/or use the Platform through Your mobile,
           tablet, and/or any other computer sources or electronic devices, We
           may receive information about Your location, Your IP address,

@@ -6,6 +6,7 @@ import {
   PrivacyPolicy,
   SecondHome,
   SecondLanding,
+  Terms,
 } from './Pages';
 
 const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/customer-support/privacy-policy',
         element: <PrivacyPolicy />,
+      },
+      {
+        path: '/customer-support/terms-use',
+        element: <Terms />,
       },
     ],
   },
