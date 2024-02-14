@@ -27,3 +27,8 @@
 .outlet {
   background-color: rgb(249, 249, 249);
 }
+.pic {
+  background-image: url('https://assets-global.website-files.com/60be6e42ecea08f815b762c3/6153bfb4eae09f1855880868_footer-image.svg');
+  background-size: fill;
+  background-repeat: no-repeat;
+}

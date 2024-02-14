@@ -18,6 +18,8 @@ const footerSCard =
   'https://cdn.zeptonow.com/web-static-assets-prod/artifacts/8.2.6/images/pdp/do-not-blink.svg';
 const footerTCard =
   'https://cdn.zeptonow.com/web-static-assets-prod/artifacts/8.2.6/images/pdp/enjoy.svg';
+  export const emailLogo =
+    'https://assets-global.website-files.com/60be6e42ecea08f815b762c3/60e9374f66d019ce8fa22847_support-email.svg';
 
 export const data = [
   {

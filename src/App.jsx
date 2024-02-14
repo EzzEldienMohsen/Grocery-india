@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/support',
+    path: '/customer-support',
     element: <SecondHome />,
     children: [
       {
