@@ -1,5 +1,11 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home, Landing, SecondHome, SecondLanding } from './Pages';
+import {
+  DeliveryAreas,
+  Home,
+  Landing,
+  SecondHome,
+  SecondLanding,
+} from './Pages';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +25,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <SecondLanding />,
+      },
+      {
+        path: '/customer-support/del-areas',
+        element: <DeliveryAreas />,
       },
     ],
   },
