@@ -9,14 +9,14 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const LargeLastFooter = () => {
   return (
-    <div className="w-full bg-slate-50 hidden mt-4 mb-8 md:flex ">
+    <div className="w-full  hidden mt-4 mb-8 md:flex ">
       <div className="mt-2 w-1/4 flex flex-col justify-start items-start bg-slate-50 mr-2">
-        <img src={logo} alt="logo" className="w-full mb-2 h-auto" />
+        <img src={logo} alt="logo" className="w-32 mb-2 h-auto" />
         <div className="flex justify-between w-3/5 items-center">
-          <FaInstagram className="w-12 h-12" />
-          <FaXTwitter className="w-12 h-12" />
-          <CiFacebook className="w-12 h-12" />
-          <FaLinkedin className="w-12 h-12" />
+          <FaInstagram className="w-6 h-6 mr-2" />
+          <FaXTwitter className="w-6 h-6 mr-2" />
+          <CiFacebook className="w-6 h-6 mr-2" />
+          <FaLinkedin className="w-6 h-6 mr-2" />
         </div>
         <p className="mt-2  bg-slate-50 opacity-65 text-black">
           © KiranaKart Technologies Private Limited
@@ -29,14 +29,14 @@ const LargeLastFooter = () => {
               target="__blank"
               to={link.to}
               key={link.id}
-              className="text-black text-2xl font-semibold m-2"
+              className="text-black text-lg font-semibold m-2"
             >
               {link.text}
             </Link>
           );
         })}
       </div>
-      <div className="flex flex-col justify-start items-start bg-inherit w-1/4 ">
+      <div className="flex flex-col justify-center items-start bg-inherit w-1/4 ">
         <h2 className="mr-2 text-2xl text-black">Download App</h2>
         <div className="flex flex-col justify-center items-center w-full mb-2">
           <Link

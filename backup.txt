@@ -1,0 +1,29 @@
+import { Link } from 'react-router-dom';
+import { logo, menuLinks } from '../assets';
+import { FaBars } from 'react-icons/fa';
+
+const SmallSubHeader = () => {
+  return (
+    <div className="w-full h-auto flex  px-16 md:hidden">
+      <img src={logo} alt="logo" className="w-24 h-24 mr-96" />
+      <details>
+        <summary className="m-1 btn ">
+          <FaBars id="bars" className="w-16 h-16 text" />
+        </summary>
+        <ul className="p-2 shadow menu dropdown-content dropdown-end  dropdown-left z-[1] bg-base-100 rounded-box w-80">
+          {menuLinks.map((link) => {
+            return (
+              <li key={link.id}>
+                <Link to={link.to} className="mt-3 text-white text-2xl">
+                  {link.text}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </details>
+    </div>
+  );
+};
+
+export default SmallSubHeader;

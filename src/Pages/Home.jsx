@@ -5,8 +5,10 @@ const Home = () => {
   return (
     <div className="w-full h-auto bg-slate-50">
       <Header />
-      <Outlet />
-      <Footer />
+      <div className="outlet">
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 };

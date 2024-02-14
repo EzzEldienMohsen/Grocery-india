@@ -1,4 +1,9 @@
 import { nanoid } from 'nanoid';
+import { CiFacebook } from 'react-icons/ci';
+import { FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa';
+
 export const image =
   'https://cdn.zeptonow.com/web-static-assets-prod/artifacts/8.2.6/tr:w-60,ar-60-60,pr-true,f-auto,q-80//images/get-the-app/get-the-app-phone.png';
 export const logo =
@@ -71,6 +76,11 @@ export const pagesLinks = [
   { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
   { id: nanoid(), text: 'Mojo - a Zepto Blog', to: '/mojo' },
 ];
+export const footerLinks = [
+  { id: nanoid(), text: 'Privacy Policy', to: '/privacy-policy' },
+  { id: nanoid(), text: 'Terms of Use', to: '/terms-use' },
+  { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
+];
 
 export const menuLinks = [
   { id: nanoid(), text: 'Home', to: '/' },
@@ -79,4 +89,26 @@ export const menuLinks = [
   { id: nanoid(), text: 'Customer Support', to: '/customer-support' },
   { id: nanoid(), text: 'Press', to: '/press' },
   { id: nanoid(), text: 'Mojo - a Zepto Blog', to: '/mojo' },
+];
+export const secondSocial = [
+  {
+    id: nanoid(),
+    logo: FaInstagram,
+    text: 'Instagram',
+  },
+  {
+    id: nanoid(),
+    logo: CiFacebook,
+    text: 'Facebook',
+  },
+  {
+    id: nanoid(),
+    logo: FaXTwitter,
+    text: 'Twitter',
+  },
+  {
+    id: nanoid(),
+    logo: FaLinkedin,
+    text: 'Linkedin',
+  },
 ];

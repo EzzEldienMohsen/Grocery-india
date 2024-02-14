@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 #delivery-time {
-  background-image: url('./assets/express-delivery.png');
-  background-size: 25vh;
-  background-color: rgba(160, 18, 155, 0.702);
+  background-image: url('https://cdn.zeptonow.com/web-static-assets-prod/artifacts/8.2.6/_next/static/media/eta_normal_sm_bg.5c27a237.png');
+  background-size: cover;
+
   border-radius: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #second-home {
   background-color: #3c006b;
+  background-image: url('https://assets-global.website-files.com/60be6e42ecea08f815b762c3/6153b832d6a443c082ea0751_clouds.svg');
+  background-repeat: repeat;
+  background-size: contain;
 }
 #second-outlet,
 #drop {
@@ -19,4 +20,10 @@
 }
 #bars {
   color: #ff3269;
+}
+.v-color {
+  background-color: rgb(60, 0, 107);
+}
+.outlet {
+  background-color: rgb(249, 249, 249);
 }

@@ -11,24 +11,28 @@ const Header = () => {
   return (
     <div className="w-full flex flex-col ">
       <div className="w-full flex flex-col top-0 left-0 fixed z-[102]">
-        <div
-          className={`bg-slate-100 w-full py-4 px-8 flex justify-between items-center ${
-            clicked ? 'hidden' : 'blocked'
-          }`}
-        >
-          <img src={image} alt="logo" className="w-16 h-16 z-[102]" />
-          <h1 className="text-4xl bold capitalize">adv placement</h1>
-          <button
-            className="bg-red-600 text-white w-16 h-10 rounded-md"
-            onClick={() => {
-              setClicked(true);
-              return redirect('/');
-            }}
-          >
-            App
-          </button>
+        <div className="z-[101] w-inherit made-image-two">
+          <div className="z-[102] w-inherit made-image-three">
+            <div
+              className={`bg-slate-100 w-full py-4 px-8 flex justify-between items-center ${
+                clicked ? 'hidden' : 'blocked'
+              }`}
+            >
+              <img src={image} alt="logo" className="w-16 h-16 z-[102]" />
+              <h1 className="text-4xl bold capitalize">adv placement</h1>
+              <button
+                className="bg-red-600 text-white w-16 h-10 rounded-md"
+                onClick={() => {
+                  setClicked(true);
+                  return redirect('/');
+                }}
+              >
+                App
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="bg-indigo-800 flex h-32 justify-center items-center flex-col w-full px-8 py-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="v-color flex h-32 justify-center items-center flex-col w-full px-8 py-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex justify-between items-center w-full lg:hidden ">
             <h1 className="text-xl">location function</h1>
             <button className="bg-transparent text-white w-16 h-10">
@@ -61,13 +65,13 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className=" w-full flex flex-col items-center justify-center pt-[223px]">
+      <div className=" w-full flex  flex-col items-center justify-center pt-[223px]">
         <div
           id="delivery-time"
-          className="flex justify-center flex-col items-center font-lato text-indigo-900 mb-4 w-full h-32"
+          className="flex justify-center flex-col items-center font-lato text-white mb-4 w-full h-32"
         >
-          <p className="text-xl text-indigo-950 font-black ">Delivery in</p>
-          <h3 className="text-indigo-900 font-black text-3xl underline uppercase">
+          <p className="text-xl text-white font-black ">Delivery in</p>
+          <h3 className="text-white font-black text-3xl underline uppercase">
             9 mins
           </h3>
         </div>
