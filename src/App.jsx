@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {
   DeliveryAreas,
+  Disclosure,
   Home,
   Landing,
   PrivacyPolicy,
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/customer-support/terms-use',
         element: <Terms />,
+      },
+      {
+        path: '/customer-support/disclosure',
+        element: <Disclosure />,
       },
     ],
   },

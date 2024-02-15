@@ -79,7 +79,11 @@ export const pagesLinks = [
     to: '/customer-support/privacy-policy',
   },
   { id: nanoid(), text: 'Terms of Use', to: '/customer-support/terms-use' },
-  { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
+  {
+    id: nanoid(),
+    text: 'Responsible Disclosure Policy',
+    to: '/customer-support/disclosure',
+  },
   { id: nanoid(), text: 'Mojo - a Zepto Blog', to: '/mojo' },
 ];
 export const footerLinks = [
@@ -89,7 +93,11 @@ export const footerLinks = [
     to: '/customer-support/privacy-policy',
   },
   { id: nanoid(), text: 'Terms of Use', to: '/customer-support/terms-use' },
-  { id: nanoid(), text: 'Responsible Disclosure Policy', to: '/disclosure' },
+  {
+    id: nanoid(),
+    text: 'Responsible Disclosure Policy',
+    to: '/customer-support/disclosure',
+  },
 ];
 
 export const menuLinks = [
