@@ -27,3 +27,21 @@ const SmallSubHeader = () => {
 };
 
 export default SmallSubHeader;
+
+
+
+
+  <div className="map">
+      <h2 className="map-h2">Come Visit Us At Our Campus</h2>
+
+      <div className="google-map">
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: 'AIzaSyDyCMcnYg6k5MlNQHeludkPrVPse_rb2JM' }}
+          defaultCenter={location}
+          defaultZoom={5}
+        >
+          {/* <Marker /> */}
+        </GoogleMapReact>
+      </div>
+    </div>
+  );
