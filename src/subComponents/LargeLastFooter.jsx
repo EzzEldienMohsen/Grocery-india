@@ -9,9 +9,9 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const LargeLastFooter = () => {
   return (
-    <div className="w-full  hidden mt-4 mb-8 md:flex ">
+    <div className="w-full  hidden mt-4 pb-10 md:flex px-10 ">
       <div className="mt-2 w-1/4 flex flex-col justify-start items-start bg-slate-50 mr-2">
-        <img src={logo} alt="logo" className="w-32 mb-2 h-auto" />
+        <img src={logo} alt="logo" className="w-32 h-auto mb-4" />
         <div className="flex justify-between w-3/5 items-center">
           <FaInstagram className="w-6 h-6 mr-2" />
           <FaXTwitter className="w-6 h-6 mr-2" />
@@ -36,7 +36,7 @@ const LargeLastFooter = () => {
           );
         })}
       </div>
-      <div className="flex flex-col justify-center items-start bg-inherit w-1/4 ">
+      <div className="flex flex-col justify-center items-center bg-inherit w-1/4 ">
         <h2 className="mr-2 text-2xl text-black">Download App</h2>
         <div className="flex flex-col justify-center items-center w-full mb-2">
           <Link
