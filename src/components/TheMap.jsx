@@ -2,7 +2,7 @@ import GoogleMapReact from 'google-map-react';
 import '../map.css';
 import LocationPin from './LocationPin';
 import React from 'react';
-
+const key = import.meta.env.MAPS_API_KEY;
 const TheMap = () => {
   const [location, setLocation] = React.useState(null);
   function handleLocationClick() {
@@ -42,7 +42,7 @@ const TheMap = () => {
         <div className="google-map">
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: 'AIzaSyDyCMcnYg6k5MlNQHeludkPrVPse_rb2JM',
+              key: key,
             }}
             defaultCenter={location}
             defaultZoom={5}
