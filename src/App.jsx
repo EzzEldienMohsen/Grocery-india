@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {
+  CompanyDetails,
   DeliveryAreas,
   Disclosure,
   Home,
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/customer-support/disclosure',
         element: <Disclosure />,
+      },
+      {
+        path: '/customer-support/company',
+        element: <CompanyDetails />,
       },
     ],
   },

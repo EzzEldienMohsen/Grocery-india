@@ -4,7 +4,7 @@ import LocationPin from './LocationPin';
 import React from 'react';
 const key = import.meta.env.MAPS_API_KEY;
 const TheMap = () => {
-  const [location, setLocation] = React.useState(null);
+  const [location, setLocation] = React.useState({});
   function handleLocationClick() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(success, error);
@@ -16,7 +16,11 @@ const TheMap = () => {
   function success(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    setLocation({ latitude, longitude });
+    setLocation((location) => {
+      location.latitude = latitude;
+      location.longitude = longitude;
+      return location;
+    });
     console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
   }
 
@@ -45,7 +49,7 @@ const TheMap = () => {
               key: key,
             }}
             defaultCenter={location}
-            defaultZoom={5}
+            defaultZoom={0}
             className="w-full h-full bg-black"
           >
             <LocationPin />

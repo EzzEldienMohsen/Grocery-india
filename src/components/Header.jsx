@@ -3,13 +3,14 @@ import { Link, redirect } from 'react-router-dom';
 import { CgProfile } from 'react-icons/cg';
 import { IoBagOutline } from 'react-icons/io5';
 import { greenPic, image, logo, purplePic } from '../assets';
+import LocationCheck from './LocationCheck';
 
 const Header = () => {
   const [fetching, setFetching] = React.useState(false);
   const [clicked, setClicked] = React.useState(false);
-
+  const text = fetching ? 'fetching..' : 'fetched';
   return (
-    <div className="w-full flex flex-col ">
+    <div className="w-full flex flex-col z-[-5]">
       <div className="w-full flex flex-col top-0 left-0 fixed z-[102]">
         <div className="z-[101] w-inherit made-image-two">
           <div className="z-[102] w-inherit made-image-three">
@@ -42,8 +43,10 @@ const Header = () => {
           <Link to="/" className="hidden lg:block lg:w-20 mr-2">
             <img src={logo} alt="name" />
           </Link>
-          <div className="bg-current w-1 h-4/5 rounded-lg mr-2 hidden lg:block" />
-          <h1 className="text-xl hidden lg:block mr-1">location function</h1>
+          <div className="bg-white w-1 h-4/5 rounded-lg mr-2 hidden lg:block" />
+          <div className="text-xl hidden w-1/6 text-black lg:block mr-1">
+            <LocationCheck text={text} />
+          </div>
           <input
             type="search"
             placeholder="search"
@@ -52,7 +55,7 @@ const Header = () => {
           />
           <Link
             to="/login"
-            className="hidden lg:block lg:mr-2 text-white text-xl"
+            className="hidden lg:block px-2 lg:mx-2 text-white text-xl"
           >
             log in
           </Link>
@@ -65,7 +68,11 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className=" w-full flex  flex-col items-center justify-center pt-[223px]">
+      <div
+        className={`w-full flex  flex-col items-center justify-center ${
+          clicked ? 'pt-[127px]' : 'pt-[223px]'
+        }`}
+      >
         <div
           id="delivery-time"
           className="flex justify-center flex-col items-center font-lato text-white mb-4 w-full h-32"

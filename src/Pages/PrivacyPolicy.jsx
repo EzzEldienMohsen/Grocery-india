@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 /* eslint-disable react/no-unescaped-entities */
 const PrivacyPolicy = () => {
   return (
@@ -21,7 +23,11 @@ const PrivacyPolicy = () => {
           ‘zeptonow.com’ and mobile application ‘Zepto’ (collectively,
           the“Platform”). The ‘Company’ is a licensee of the brand Zepto and the
           Platform, and is responsible for operating and managing the Platform
-          under the license. You can access the complete Company details here.
+          under the license. You can access the complete Company details{' '}
+          <Link to="'/customer-support/company" className="underLine">
+            here
+          </Link>
+          .
         </p>
         <p className="mb-4 text-white text-2xl font-normal">
           This privacy policy (Privacy Policy) describes the policies and

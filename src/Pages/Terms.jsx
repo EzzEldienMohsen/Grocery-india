@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Link } from 'react-router-dom';
+
 const Terms = () => {
   return (
     <div className="flex flex-col w-full h-auto  px-10">
@@ -25,7 +27,11 @@ const Terms = () => {
           the “Platform”)is operated and managed by the Company. The term
           Company shall collectively and individually refer to each company
           which operates and manages the Platform with respect to the respective
-          cities. You can access the complete Company details here.
+          cities. You can access the complete Company details{' '}
+          <Link to="'/customer-support/company" className="underLine">
+            here
+          </Link>
+          .
         </p>
         <p className="mb-4 text-white pl-8 text-2xl font-normal">
           B. These terms of use (“Terms”) govern Your use of the Platform, and
