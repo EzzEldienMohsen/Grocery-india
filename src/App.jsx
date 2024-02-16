@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {
+  Cart,
   CompanyDetails,
   DeliveryAreas,
   Disclosure,
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Landing />,
       },
+      {
+        path: '/cart',
+        element: <Cart />,
+      },
     ],
   },
   {
@@ -30,6 +35,7 @@ const router = createBrowserRouter([
         index: true,
         element: <SecondLanding />,
       },
+
       {
         path: '/customer-support/del-areas',
         element: <DeliveryAreas />,
