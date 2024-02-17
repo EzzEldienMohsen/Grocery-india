@@ -22,7 +22,7 @@ const LargeLastFooter = () => {
           © KiranaKart Technologies Private Limited
         </p>
       </div>
-      <div className="flex flex-wrap w-1/2 h-auto justify-center items-center ">
+      <div className="grid grid-cols-2 w-1/2 h-auto justify-center items-center ">
         {pagesLinks.map((link) => {
           return (
             <Link
