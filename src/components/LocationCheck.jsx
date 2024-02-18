@@ -22,12 +22,12 @@ const LocationCheck = ({ text }) => {
     console.log('Unable to retrieve your location');
   }
   return (
-    <div className="w-inherit bg-white text-black">
-      <div className="dropdown dropdown-open">
+    <div className="w-[180px] rounded-lg ml-10 h-[50px] bg-white text-black">
+      <div className="dropdown dropdown-open ">
         <div
           tabIndex={0}
           role="button"
-          className="w-inherit p-4 flex justify-center items-center"
+          className="w-inherit pt-3 pl-3 flex justify-center items-center mb-4"
         >
           <>{text}</>
         </div>

@@ -8,3 +8,4 @@ export { default as Terms } from './Terms.jsx';
 export { default as Disclosure } from './Disclosure.jsx';
 export { default as CompanyDetails } from './CompanyDetails.jsx';
 export { default as Cart } from './Cart.jsx';
+export { default as Press } from './Press.jsx';

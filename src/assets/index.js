@@ -193,3 +193,20 @@ export const deliveryAreas = [
     text: 'Marketyard | Baner | Nibm Road | Ravet | Viman Nagar | Pimple Saudagar | Aundh | Shivajinagar | Hinjewadi Phase-1 | Koregaon Park | Kharadi | Kothrud | Hadapsar | Magarpatta',
   },
 ];
+
+export const pressLinks = [
+  {
+    id: nanoid(),
+    img: 'https://assets-global.website-files.com/612ce9a327af1203dd3b50ef/61c19f9dfc4d044bac4f7956_zepto-funding-yc-continuity-p-1080.jpeg',
+    title: 'Bloomberg',
+    date: '20 December 2021',
+    text: 'Grocery Startup Founded by Teens Doubles Value to $570 Million',
+  },
+  {
+    id: nanoid(),
+    img: 'https://assets-global.website-files.com/612ce9a327af1203dd3b50ef/617f748b6ebb03f565ec2092_MPV05128-p-1080.jpeg',
+    title: 'techcrunch',
+    date: 'October 31, 2021',
+    text: 'Grocery Startup Founded by Teens Doubles Value to $570 Million',
+  },
+];

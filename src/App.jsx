@@ -6,6 +6,7 @@ import {
   Disclosure,
   Home,
   Landing,
+  Press,
   PrivacyPolicy,
   SecondHome,
   SecondLanding,
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: '/customer-support/terms-use',
         element: <Terms />,
+      },
+      {
+        path: '/customer-support/press',
+        element: <Press />,
       },
       {
         path: '/customer-support/disclosure',
