@@ -42,7 +42,11 @@ const Header = () => {
               <CgProfile className="bg-transparent text-white w-16 h-10" />
             </button>
           </div>
-          <Link to="/" className="hidden lg:block lg:w-20 mr-2">
+          <Link
+            onClick={setIsHidden(() => false)}
+            to="/"
+            className="hidden lg:block lg:w-20 mr-2"
+          >
             <img src={logo} alt="name" />
           </Link>
           <div className="bg-white w-1 h-4/5 rounded-lg mr-2 hidden lg:block" />

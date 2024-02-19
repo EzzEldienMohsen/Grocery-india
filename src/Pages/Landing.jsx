@@ -1,11 +1,16 @@
 import { useGlobalContext } from '../utils';
+import Products from './Products';
 
 const Landing = () => {
-  const { setIsHidden } = useGlobalContext();
+  const { setIsHidden, isClicked } = useGlobalContext();
   setIsHidden(() => false);
   return (
-    <div className="text-4xl flex justify-center items-center  lg:w-full">
-      hi
+    <div
+      className={` flex-col flex justify-center items-center mt-4 lg:w-full ${
+        isClicked ? 'pt-[137px]' : 'pt-[233px]'
+      }`}
+    >
+      <Products />
     </div>
   );
 };

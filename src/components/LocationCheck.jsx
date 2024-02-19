@@ -27,6 +27,7 @@ const LocationCheck = ({ text }) => {
     ) {
       setIsChecked(() => true);
       setIsDropDown(() => false);
+      setIsHidden(() => false);
     } else {
       setIsDropDown(() => false);
 
@@ -51,17 +52,17 @@ const LocationCheck = ({ text }) => {
         </div>
         <div
           tabIndex={0}
-          className="dropdown-content z-[100] card card-compact w-[800px] p-2 shadow bg-white "
+          className="dropdown-content z-[100] card card-compact w-[400px] h-[200px] p-2 shadow bg-white "
         >
           <div className="card-body">
             <h3 className="card-title">
               Please provide your delivery location to see products at nearby
               store
             </h3>
-            <div className="w-inherit flex justify-between items-center mt-4">
+            <div className="w-inherit flex justify-between items-center my-4">
               <Link
                 to="/manual"
-                className="btn w-2/5 btn-square rounded-md manual-button text-xl"
+                className="btn w-2/5 btn-square rounded-md h-16 manual-button text-xl"
                 onClick={() => setIsDropDown(() => false)}
               >
                 insert manually
@@ -69,7 +70,7 @@ const LocationCheck = ({ text }) => {
 
               <button
                 onClick={handleLocationClick}
-                className="btn  w-2/5 btn-square rounded-md auto-button text-xl"
+                className="btn h-16 w-2/5 btn-square rounded-md auto-button text-xl"
               >
                 Grant
               </button>

@@ -10,3 +10,5 @@ export { default as CompanyDetails } from './CompanyDetails.jsx';
 export { default as Cart } from './Cart.jsx';
 export { default as Press } from './Press.jsx';
 export { default as Error } from './Error.jsx';
+export { default as Products } from './Products.jsx';
+export { default as SingleProduct } from './SingleProduct.jsx';

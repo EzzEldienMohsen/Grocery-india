@@ -1,12 +1,114 @@
 [
   {
-    "name": "Category 1",
-    "image": "",
+    "name": "Fruits & Vegetables",
     "url": "......"
   },
   {
-    "name": "Category 2",
-    "image": "",
+    "name": "Baby Food",
+    "url": "......"
+  },
+  {
+    "name": "Breakfast & Sauces",
+    "url": "......"
+  },
+  {
+    "name": "Cleaning Essentials",
+    "url": "......"
+  },
+  {
+    "name": "Homegrown Brands",
+    "url": "......"
+  },
+  {
+    "name": "Atta, Rice, Oil & Dals",
+    "url": "......"
+  },
+  {
+    "name": "Tea, Coffee & More",
+    "url": "......"
+  },
+  {
+    "name": "Home Needs",
+    "url": "......"
+  },
+  {
+    "name": "Paan Corner",
+    "url": "......"
+  },
+  {
+    "name": "Masala & Dry Fruits",
+    "url": "......"
+  },
+  {
+    "name": "Sweet Cravings",
+    "url": "......"
+  },
+  {
+    "name": "Frozen Food & Ice Creams",
+    "url": "......"
+  },
+  {
+    "name": "Dairy, Bread & Eggs",
+    "url": "......"
+  },
+  {
+    "name": "Cold Drinks & Juices",
+    "url": "......"
+  },
+  {
+    "name": "Cold Drinks & Juices",
+    "url": "......"
+  },
+  {
+    "name": "Munchies",
+    "url": "......"
+  },
+  {
+    "name": "Meats, Fish & Eggs",
+    "url": "......"
+  },
+  {
+    "name": "Tea, Coffee & More",
+    "url": "......"
+  },
+  {
+    "name": "Biscuits",
+    "url": "......"
+  },
+  {
+    "name": "Bath & Body",
+    "url": "......"
+  },
+  {
+    "name": "Cleaning Essentials",
+    "url": "......"
+  },
+  {
+    "name": "Makeup & Beauty",
+    "url": "......"
+  },
+  {
+    "name": "Home Needs",
+    "url": "......"
+  },
+  {
+    "name": "Electricals & Accessories",
+    "url": "......"
+  },
+  {
+    "name": "Electricals & Accessories",
+    "url": "......"
+  },
+  {
+    "name": "Hygiene & Grooming",
+    "url": "......"
+  },
+  {
+    "name": "Health & Baby Care",
+    "url": "......"
+  },
+  {
+    "name": "Homegrown Brands",
     "url": "......"
   }
 ]

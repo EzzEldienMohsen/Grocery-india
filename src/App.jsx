@@ -10,11 +10,22 @@ import {
   PrivacyPolicy,
   SecondHome,
   SecondLanding,
+  SingleProduct,
   Terms,
 } from './Pages';
 import { MaualLocationInput } from './components';
-import Error from './Pages/Error';
+import { loader as productsLoader } from './Pages/Products';
+import { loader as SingleProductLoader } from './Pages/SingleProduct';
 
+import Error from './Pages/Error';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+const queryCLient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 5 * 60 * 1000,
+    },
+  },
+});
 const router = createBrowserRouter([
   {
     path: '/',
@@ -23,6 +34,13 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        loader: productsLoader(queryCLient),
+      },
+
+      {
+        path: '/products/:id',
+        element: <SingleProduct />,
+        loader: SingleProductLoader(queryCLient),
       },
       {
         path: '/cart',
@@ -77,9 +95,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryCLient}>
       <RouterProvider router={router} />
-    </>
+    </QueryClientProvider>
   );
 }
 

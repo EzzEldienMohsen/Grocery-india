@@ -25,6 +25,7 @@ const MaualLocationInput = () => {
     ) {
       setIsChecked(() => true);
       setIsDropDown(() => false);
+      setIsHidden(() => false);
     } else {
       setIsDropDown(() => false);
 
@@ -60,6 +61,7 @@ const MaualLocationInput = () => {
       ) {
         setIsChecked(() => true);
         setIsDropDown(() => false);
+        setIsHidden(() => false);
         navigate('/');
       } else {
         setIsDropDown(() => false);

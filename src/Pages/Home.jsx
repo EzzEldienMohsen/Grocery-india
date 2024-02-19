@@ -14,14 +14,13 @@ const Home = () => {
         disabled
         onClick={(e) => e.preventDefault()}
       > */}
-        <Header />
-        {isHidden ? <></> : <SecondaryMainHeader />}
-
-        <div className="outlet">
-          <Outlet />
-          {isHidden ? <></> : <Footer />}
-        </div>
+      <Header />
+      <SecondaryMainHeader />
+      <div className="outlet">
+        <Outlet />
+        <Footer />
       </div>
+    </div>
     // </div>
   );
 };
