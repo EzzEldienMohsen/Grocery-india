@@ -12,6 +12,8 @@ import {
   SecondLanding,
   Terms,
 } from './Pages';
+import { MaualLocationInput } from './components';
+import Error from './Pages/Error';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <Cart />,
+      },
+      {
+        path: '/error',
+        element: <Error />,
+      },
+      {
+        path: '/manual',
+        element: <MaualLocationInput />,
       },
     ],
   },

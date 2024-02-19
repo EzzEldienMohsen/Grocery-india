@@ -6,3 +6,4 @@ export { default as TheMap } from './TheMap.jsx';
 export { default as LocationCheck } from './LocationCheck.jsx';
 export { default as FormInput } from './FormInput.jsx';
 export { default as SecondaryMainHeader } from './SecondaryMainHeader.jsx';
+export { default as MaualLocationInput } from './MaualLocationInput.jsx';
