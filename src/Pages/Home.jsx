@@ -7,21 +7,21 @@ const Home = () => {
   const { isHidden, isChecked } = useGlobalContext();
   return (
     <div className="w-full h-auto bg-slate-50">
-      <div
+      {/* <div
         className={`z-[20] w-full h-[1973px] bg-transparent opacity-35 ${
           isChecked ? 'hidden' : 'block'
         }`}
         disabled
         onClick={(e) => e.preventDefault()}
-      >
-        <Header />
-        <SecondaryMainHeader />
-        <div className="outlet">
-          <Outlet />
-          <Footer />
-        </div>
+      > */}
+      <Header />
+      <SecondaryMainHeader />
+      <div className="outlet">
+        <Outlet />
+        <Footer />
       </div>
     </div>
+    // </div>
   );
 };
 
