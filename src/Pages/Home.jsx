@@ -1,19 +1,28 @@
+/* eslint-disable no-unused-vars */
 import { Outlet } from 'react-router-dom';
 import { Footer, Header, SecondaryMainHeader } from '../components';
 import { useGlobalContext } from '../utils';
 
 const Home = () => {
-  const { isHidden } = useGlobalContext();
+  const { isHidden, isChecked } = useGlobalContext();
   return (
     <div className="w-full h-auto bg-slate-50">
-      <Header />
-      {isHidden ? <></> : <SecondaryMainHeader />}
+      {/* <div
+        className={`z-[20] w-full h-[1973px] bg-transparent opacity-35 ${
+          isChecked ? 'hidden' : 'block'
+        }`}
+        disabled
+        onClick={(e) => e.preventDefault()}
+      > */}
+        <Header />
+        {isHidden ? <></> : <SecondaryMainHeader />}
 
-      <div className="outlet">
-        <Outlet />
-        {isHidden ? <></> : <Footer />}
+        <div className="outlet">
+          <Outlet />
+          {isHidden ? <></> : <Footer />}
+        </div>
       </div>
-    </div>
+    // </div>
   );
 };
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link, redirect } from 'react-router-dom';
 import { CgProfile } from 'react-icons/cg';
@@ -36,7 +37,7 @@ const Header = () => {
         </div>
         <div className="v-color flex h-32 justify-center items-center flex-col w-full px-8 py-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex justify-between items-center w-full lg:hidden ">
-            <h1 className="text-xl">location function</h1>
+            <LocationCheck text={text} />
             <button className="bg-transparent text-white w-16 h-10">
               <CgProfile className="bg-transparent text-white w-16 h-10" />
             </button>

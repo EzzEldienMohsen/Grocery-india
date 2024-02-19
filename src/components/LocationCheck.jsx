@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { Link, useNavigate } from 'react-router-dom';
 import { useGlobalContext } from '../utils';
 
 const LocationCheck = ({ text }) => {
-  const { setIsChecked, isDropDown, setIsDropDown, setIsHidden } =
+  const { setIsChecked, isDropDown, isChecked, setIsDropDown, setIsHidden } =
     useGlobalContext();
   const navigate = useNavigate();
   function handleLocationClick() {
@@ -37,7 +39,7 @@ const LocationCheck = ({ text }) => {
     console.log('Unable to retrieve your location');
   }
   return (
-    <div className="w-[180px] rounded-lg ml-10 h-[50px] bg-white text-black">
+    <div className=" w-[140px] z-[100] mr-2 rounded-lg ml-5 h-[50px] bg-white text-black">
       <div className={`dropdown ${isDropDown ? 'dropdown-open' : ''} `}>
         <div
           tabIndex={0}
@@ -49,17 +51,17 @@ const LocationCheck = ({ text }) => {
         </div>
         <div
           tabIndex={0}
-          className="dropdown-content z-[1] card card-compact w-96 p-2 shadow bg-white "
+          className="dropdown-content z-[100] card card-compact w-[800px] p-2 shadow bg-white "
         >
           <div className="card-body">
             <h3 className="card-title">
               Please provide your delivery location to see products at nearby
               store
             </h3>
-            <div className="w-inherit flex justify-between items-center">
+            <div className="w-inherit flex justify-between items-center mt-4">
               <Link
                 to="/manual"
-                className="btn w-40 btn-square rounded-md manual-button"
+                className="btn w-2/5 btn-square rounded-md manual-button text-xl"
                 onClick={() => setIsDropDown(() => false)}
               >
                 insert manually
@@ -67,7 +69,7 @@ const LocationCheck = ({ text }) => {
 
               <button
                 onClick={handleLocationClick}
-                className="btn  w-40 btn-square rounded-md auto-button"
+                className="btn  w-2/5 btn-square rounded-md auto-button text-xl"
               >
                 Grant
               </button>

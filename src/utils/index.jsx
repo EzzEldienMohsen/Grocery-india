@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 var GlobalContext = React.createContext();
 export var useGlobalContext = () => React.useContext(GlobalContext);
