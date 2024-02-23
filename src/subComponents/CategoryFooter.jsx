@@ -25,7 +25,7 @@ const CategoryFooter = () => {
   ) : (
     <div className="w-inherit flex flex-col justify-start items-start my-2  border-y-2 border-slate-400">
       <h2 className="text-3xl font-extrabold mb-2">Category</h2>
-      <div className="grid md:grid-cols-5 grid-cols-2  w-full  bg-inherit ">
+      <div className="grid md:grid-cols-4 grid-cols-2  w-full  bg-inherit ">
         {data.data.map((cat, index) => {
           return (
             <Link to={cat.url} key={index} className="m-3 text-xl ">

@@ -19,7 +19,6 @@ export var loader =
   async ({ params }) => {
     var { id } = params;
     var data = await queryCLient.ensureQueryData(singleProductQuery(id));
-
     return data;
   };
 const SingleProduct = () => {
