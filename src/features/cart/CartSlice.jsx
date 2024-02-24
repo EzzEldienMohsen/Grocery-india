@@ -48,6 +48,7 @@ var cartSlice = createSlice({
       cartSlice.caseReducers.calculateTotals(state);
     },
     calculateTotals: (state) => {
+      state.tax = 0;
       state.tax += 0.1 * state.cartTotal;
       state.orderTotal = state.cartTotal + state.tax + state.shipping;
       localStorage.setItem('cart', JSON.stringify(state));

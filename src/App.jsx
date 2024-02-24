@@ -14,7 +14,6 @@ import {
   Terms,
 } from './Pages';
 import { MaualLocationInput } from './components';
-import { loader as productsLoader } from './Pages/Products';
 import { loader as SingleProductLoader } from './Pages/SingleProduct';
 
 import Error from './Pages/Error';
@@ -34,7 +33,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
-        loader: productsLoader(queryCLient),
       },
 
       {

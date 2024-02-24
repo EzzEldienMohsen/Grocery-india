@@ -1,67 +1,67 @@
 [
   {
     "name": "Fruits & Vegetables",
-    "url": "......"
+    "url": "/fruitsAndVegetables"
   },
   {
     "name": "Baby Food",
-    "url": "......"
+    "url": "/babyFood"
   },
 
   {
     "name": "Atta, Rice, Oil & Dals",
-    "url": "......"
+    "url": "/attaRiceOilDals"
   },
   {
     "name": "Tea, Coffee & More",
-    "url": "......"
+    "url": "/teaCoffeeMore"
   },
 
   {
     "name": "Paan Corner",
-    "url": "......"
+    "url": "/paan"
   },
   {
     "name": "Masala & Dry Fruits",
-    "url": "......"
+    "url": "/masalaDryFruits"
   },
   {
-    "name": "Sweet Cravings",
-    "url": "......"
+    "name": "Sweets",
+    "url": "/sweets"
   },
   {
     "name": "Frozen Food & Ice Creams",
-    "url": "......"
+    "url": "/frozenFoodIceCreams"
   },
   {
     "name": "Dairy, Bread & Eggs",
-    "url": "......"
+    "url": "/dairyBreadEggs"
   },
   {
     "name": "Munchies",
-    "url": "......"
+    "url": "/munchies"
   },
   {
-    "name": "Meats, Fish & birds",
-    "url": "......"
+    "name": "Meat, Fish & Birds",
+    "url": "/meatsFishBirds"
   },
 
   {
     "name": "Biscuits",
-    "url": "......"
+    "url": "/biscuits"
   },
 
   {
     "name": "Cleaning Essentials",
-    "url": "......"
+    "url": "/cleaningEssentials"
   },
   {
     "name": "Electronics",
-    "url": "......"
+    "url": "/electronics"
   },
 
   {
     "name": "Hygiene & Grooming",
-    "url": "......"
+    "url": "/hygieneGrooming"
   }
 ]

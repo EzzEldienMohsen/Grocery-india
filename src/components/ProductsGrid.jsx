@@ -1,17 +1,31 @@
 /* eslint-disable react/prop-types */
-import { Link } from 'react-router-dom';
 import { formatPrice } from '../utilities';
-import { useLoaderData } from 'react-router-dom';
 import { useGlobalContext } from '../utils';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../features/cart/CartSlice';
+import React from 'react';
 
-const ProductsGrid = () => {
+const ProductsGrid = ({ products }) => {
   const { setIsHidden } = useGlobalContext();
-  var { products } = useLoaderData();
+  var [amount, setAmount] = React.useState(1);
+
+  var dispatch = useDispatch();
+
   return (
-    <div className="pt-12 w-4/5 grid md:grid-cols-2 lg:grid-cols-3  gap-4">
+    <div className=" w-4/5 grid md:grid-cols-2 lg:grid-cols-3  gap-4">
       {products.map((prod) => {
+        const cartProduct = {
+          cartID: prod.id + prod.colors[0],
+          productID: prod.id,
+          image: prod.image,
+          title: 'a products',
+          productColor: prod.colors[0],
+          price: prod.price,
+          amount,
+          company: prod.company,
+        };
         return (
-          <Link
+          <div
             key={prod.id}
             onClick={setIsHidden(() => true)}
             to={`/products/${prod.id}`}
@@ -19,20 +33,30 @@ const ProductsGrid = () => {
           >
             <figure className="flex flex-col items-center justify-center px-4 pt-4">
               <img
-                src={prod?.attributes?.image}
-                alt={prod.attributes.title}
+                src={prod.image}
+                alt={prod.title || 'null'}
                 className="w-96 h-96 justify-center shadow-xl rounded-t-md object-cover group-hover:scale-95 transition duration-300"
               />
               <div className="card-body items-center text-center flex flex-col">
                 <h2 className="text-2xl text-center font-bold text-primary capitalize mt-4 tracking-wide">
-                  {prod.attributes.title}
+                  a product
                 </h2>
                 <span className="rounded-box p-4 text-2xl fond-bold text-secondary text-center">
-                  {formatPrice(prod.attributes.price)}
+                  {formatPrice(prod.price)}
                 </span>
               </div>
             </figure>
-          </Link>
+            <div className="mb-5 w-full justify-center-items-center">
+              <button
+                className="btn btn-secondary w-full"
+                onClick={() => {
+                  dispatch(addItem({ product: cartProduct }));
+                }}
+              >
+                Add to bag
+              </button>
+            </div>
+          </div>
         );
       })}
     </div>

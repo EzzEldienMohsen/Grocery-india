@@ -43,7 +43,7 @@ export const data = [
 ];
 
 export const FetchCategory = [
-  { id: nanoid(), text: 'category will be here' },
+  { id: nanoid(), text: 'fruits and vegetables', to: '/fruitsAndVegetables' },
   { id: nanoid(), text: 'category will be here' },
   { id: nanoid(), text: 'category will be here' },
   { id: nanoid(), text: 'category will be here' },
@@ -208,5 +208,12 @@ export const pressLinks = [
     title: 'techcrunch',
     date: 'October 31, 2021',
     text: 'Grocery Startup Founded by Teens Doubles Value to $570 Million',
+  },
+];
+export const generalprod = [
+  {
+    id: nanoid(),
+    text: 'all',
+    to: '/',
   },
 ];

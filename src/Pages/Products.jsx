@@ -1,41 +1,40 @@
 /* eslint-disable react-refresh/only-export-components */
-import { Filters, Pagination, ProductsContainer } from '../components';
 import { autoFetch } from '../utilities';
+import { ProductsContainer, SidebarMenu } from '../components';
+import { useQuery } from '@tanstack/react-query';
 
-var allProductsQuery = (params) => {
-  return {
-    queryKey: [
-      'products',
-      params.search ?? '',
-      params.company ?? 'all',
-      params.sort ?? 'a-z',
-      params.category ?? 'all',
-      params.price ?? 100000,
-      params.shipping ?? false,
-      params.page ?? 1,
-    ],
-    queryFn: () => autoFetch('/products', { params }),
-  };
-};
-
-export var loader =
-  (queryClient) =>
-  async ({ request }) => {
-    var params = Object.fromEntries([
-      ...new URL(request.url).searchParams.entries(),
-    ]);
-    var response = await queryClient.ensureQueryData(allProductsQuery(params));
-    var products = response.data.data;
-    var meta = response.data.meta;
-    return { products, meta, params };
-  };
 const Products = () => {
-  return (
-    <>
-      <Filters />
-      <ProductsContainer />
-      <Pagination />
-    </>
+  const {
+    data: products,
+    status,
+    isFetching,
+  } = useQuery({
+    queryKey: ['all'],
+    queryFn: async () => {
+      try {
+        const response = await autoFetch('/all.json');
+        const products = response.data;
+        console.log(products);
+        return response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  });
+  console.log(products);
+  return status === 'pending' || isFetching ? (
+    <section className="image-container">
+      <h4>Loading...</h4>
+    </section>
+  ) : status === 'error' ? (
+    <section className="image-container">
+      <h4>There was an error...</h4>
+    </section>
+  ) : (
+    <div className="w-full flex justify-between">
+      <SidebarMenu />
+      <ProductsContainer products={products} />
+    </div>
   );
 };
 

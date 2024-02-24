@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux'
-import { formatPrice } from '../utilities'
+import { useSelector } from 'react-redux';
+import { formatPrice } from '../utilities';
 const CartTotals = () => {
   var { cartTotal, shipping, tax, orderTotal } = useSelector(
     (state) => state.cart
-  )
+  );
 
   return (
     <div className="card bg-base-200">
@@ -30,7 +30,7 @@ const CartTotals = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CartTotals
+export default CartTotals;
