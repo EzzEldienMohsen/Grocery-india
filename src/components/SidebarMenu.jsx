@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const SidebarMenu = () => {
   return (
-    <ul className="menu bg-base-200 w-56 rounded-box">
+    <ul className="menu bg-base-200 w-80 rounded-box mr-4 text-xl ">
       <li>
         <Link to={'/'}>All</Link>
 
@@ -19,7 +19,7 @@ const SidebarMenu = () => {
             </ul>
           </li>
           <li>
-            <Link to={'/babyFood'}>baby food</Link>
+            <Link to={'/babyFood'}>Baby food</Link>
           </li>
           <li>
             <Link to={'/attaRiceOilDals'}>Atta, Rice, Oil & Dals</Link>
@@ -98,7 +98,7 @@ const SidebarMenu = () => {
             <Link to={'/munchies'}>Munchies</Link>
           </li>
           <li>
-            <Link to={'/meatsFishBirds'}>Meat, Fish & Birds</Link>
+            <Link to={'/meatFishBirds'}>Meat, Fish & Birds</Link>
             <ul>
               <li>
                 <Link to={'/meat'}>Meat</Link>

@@ -1,9 +1,8 @@
-/* eslint-disable react-refresh/only-export-components */
 import { autoFetch } from '../utilities';
 import { ProductsContainer } from '../components';
 import { useQuery } from '@tanstack/react-query';
 
-const Products = () => {
+const AttaRiceOilDals = () => {
   const {
     data: products,
     status,
@@ -12,7 +11,7 @@ const Products = () => {
     queryKey: ['all'],
     queryFn: async () => {
       try {
-        const response = await autoFetch('/all.json');
+        const response = await autoFetch('/attaRiceOilDals.json');
 
         return response.data;
       } catch (error) {
@@ -35,4 +34,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default AttaRiceOilDals;

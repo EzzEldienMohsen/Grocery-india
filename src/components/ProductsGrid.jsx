@@ -12,7 +12,7 @@ const ProductsGrid = ({ products }) => {
   var dispatch = useDispatch();
 
   return (
-    <div className=" w-4/5 grid md:grid-cols-2 lg:grid-cols-3  gap-4">
+    <div className=" w-full grid md:grid-cols-2 lg:grid-cols-3  items-center justify-between gap-8 ">
       {products.map((prod) => {
         const cartProduct = {
           cartID: prod.id + prod.colors[0],
@@ -28,7 +28,6 @@ const ProductsGrid = ({ products }) => {
           <div
             key={prod.id}
             onClick={setIsHidden(() => true)}
-            to={`/products/${prod.id}`}
             className="bg-base-300 rounded-box shadow-lg p-4 hover:shadow-2xl duration-300 group"
           >
             <figure className="flex flex-col items-center justify-center px-4 pt-4">

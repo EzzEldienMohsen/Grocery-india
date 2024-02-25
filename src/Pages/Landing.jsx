@@ -5,9 +5,7 @@ const Landing = () => {
   const { setIsHidden } = useGlobalContext();
   setIsHidden(() => false);
   return (
-    <div
-      className={` flex-col flex justify-center items-center lg:w-full pt-10`}
-    >
+    <div>
       <Products />
     </div>
   );

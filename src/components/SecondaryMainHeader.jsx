@@ -3,7 +3,7 @@ import { useGlobalContext } from '../utils';
 const SecondaryMainHeader = () => {
   const { isClicked } = useGlobalContext();
   return (
-    <div className="w-full flex flex-col z-[-5]">
+    <div className="w-full flex flex-col z-[-5] mt-1">
       <div
         className={`w-full flex  flex-col items-center justify-center ${
           isClicked ? 'pt-[127px]' : 'pt-[223px]'

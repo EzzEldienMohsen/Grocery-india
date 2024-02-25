@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { Outlet } from 'react-router-dom';
-import { Footer, Header, SecondaryMainHeader } from '../components';
+import {
+  Footer,
+  Header,
+  SecondaryMainHeader,
+  SidebarMenu,
+} from '../components';
 import { useGlobalContext } from '../utils';
 
 const Home = () => {
@@ -17,7 +22,11 @@ const Home = () => {
       <Header />
       <SecondaryMainHeader />
       <div className="outlet">
-        <Outlet />
+        <div className="w-full flex justify-between pt-10">
+          <SidebarMenu />
+          <Outlet />
+        </div>
+
         <Footer />
       </div>
     </div>
